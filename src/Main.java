@@ -1,24 +1,24 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 100;  //  начальный счет
+        int initialDeposit = 100;  //  начальный счет
 
-        int y = 1100; // сумма пополнения
+        int depositAmount = 1100; // сумма пополнения
 
-        int b = 1; // минимальное значение бонуса
+        int bonusValue = 1; // минимальное значение бонуса
 
-        int k = y / 100; // количество бонусов
+        int bonusAmount = depositAmount / 100; // количество бонусов
 
 
-        if (y > 1000) {
+        if (depositAmount > 1000) {
 
-            System.out.println("Итоговый счет: " + (x + y + k));
-        }else {
+            System.out.println("Итоговый счет: " + (initialDeposit + depositAmount + bonusAmount));
+        } else {
 
-                System.out.println("Итоговый счет: " + (x + y));
-            }
-            }
+            System.out.println("Итоговый счет: " + (initialDeposit + depositAmount));
         }
+    }
+}
 
 
 
